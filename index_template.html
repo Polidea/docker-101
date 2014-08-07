@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Docker 101</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="row">
+    <div class="small-12 columns">
+        <h1>Hi There!</h1>
+
+        <p>
+            So you're running your new shiny Nginx on Docker container. Before you run this server you compiled Sass,
+            you've filled Jinja2 template with data from Yaml file using Python. Gratz!
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="small-12 columns">
+        <h2>Below we have generated list of people:</h2>
+    </div>
+</div>
+
+{% for ppl in people %}
+<div class="row">
+    <div class="small-12 columns">
+        <h3>{{ ppl.name }} <span class="subheader">{{ ppl.position }}</span></h3>
+    </div>
+</div>
+{% endfor %}
+
+</body>
+
+</html>
